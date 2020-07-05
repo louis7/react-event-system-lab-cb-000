@@ -1,13 +1,13 @@
 // Code Keypad Component Here
 class Keypad extends React.Component {
 
-  tickle = () => {
-    console.log('Tee hee!');
+  keyupEvent = () => {
+    console.log('Entering password...');
   }
 
   render() {
     return (
-      <input type="password"/>
+      < keyUp={this.keyupEvent} input type="password"/>
     );
   }
 }
